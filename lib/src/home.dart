@@ -8,7 +8,8 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    CountProvider countProvider = Provider.of<CountProvider>(context);
+    CountProvider countProvider =
+        Provider.of<CountProvider>(context, listen: false);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Provider Sample')),
